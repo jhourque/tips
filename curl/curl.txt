@@ -1,0 +1,6 @@
+#### simulate host request ####
+curl --noproxy '*' http://127.0.0.1:9090 -H 'Host:<url host>'
+
+#### more details ####
+curl -v -k --noproxy '*' -w "dns_resolution: %{time_namelookup}, tcp_established: %{time_connect}, ssl_handshake_done: %{time_appconnect}, TTFB: %{time_starttransfer}\n" -o /dev/null -s <url host>
+

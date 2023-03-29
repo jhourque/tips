@@ -1,0 +1,2 @@
+#### Display tags Key2 value (aws cli output) ####
+cat file.json | jq -r '.Subnets[].Tags[] | select(.Key=="Key2").Value'

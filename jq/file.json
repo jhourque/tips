@@ -1,0 +1,23 @@
+{
+    "Subnets": [
+        {
+            "AvailabilityZone": "eu-west-3a",
+            "AvailabilityZoneId": "euw3-az1",
+            "AvailableIpAddressCount": 248,
+            "Tags": [
+                {
+                    "Key": "Key1",
+                    "Value": "Key1 value"
+                },
+                {
+                    "Key": "Key2",
+                    "Value": "Key2 value"
+                },
+                {
+                    "Key": "Key3",
+                    "Value": "Key3 value"
+                }
+            ]
+        }
+    ]
+}
