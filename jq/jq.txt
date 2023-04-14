@@ -1,2 +1,9 @@
 #### Display tags Key2 value (aws cli output) ####
 cat file.json | jq -r '.Subnets[].Tags[] | select(.Key=="Key2").Value'
+
+#### Display 2 values ####
+cat file.json | jq -r '.Subnets[].Tags[] | select(.Key=="Key2").Value'
+cat file.json | jq -r '.Subnets[].CidrBlock'
+->
+cat file.json | jq -r '.Subnets[] | (.Tags[] | select(.Key=="Key2").Value) +"," + .CidrBlock'
+
